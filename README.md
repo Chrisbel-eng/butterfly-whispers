@@ -2,27 +2,29 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# Butterfly Whispers 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: illuminati
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Arya P Sunil-GEC thrissur
+- Member 2: Chrisbel Muthuplackal-GEC thrissur
 
 ### Hosted Project Link
-[mention your project hosted link here]
+https://butterfly-whispers.onrender.com
 
 ### Project Description
-[2-3 lines about what your project does]
+Butterfly Whispers is a digital journal web application built using Flask and SQLite.
+It allows users to securely log in, create private journal entries with PIN protection, upload images, and manage past entries with edit and delete options.
+The platform combines functionality with a soft aesthetic design to create a personalized and secure journaling experience.
 
 ### The Problem statement
-[What problem are you solving?]
+Many people want to maintain a personal journal, but traditional methods do not ensure privacy and are not easily accessible. Existing digital tools often lack structured reflection sections and simple security features. Therefore, there is a need for a secure and user-friendly digital journaling platform that allows users to store, manage, and protect their personal thoughts.
 
 ### The Solution
-[How are you solving it?]
+
 
 ---
 
@@ -31,27 +33,25 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: javascript,html,css,python
+- Frameworks used:python Flask
 
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Tools used: , VS Code, Git,
 
----
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+ Secure Login & PIN Protection – Ensures user privacy and controlled access.
 
----
+📝 Structured Journal Entry Creation – Organized sections for daily reflections.
+
+🖼 Image Upload Feature – Allows users to attach images in polaroid-style frames.
+
+💾 Database Storage (SQLite) – Stores and manages entries securely.
+
+✏ Edit & Delete Functionality – Users can update or remove past entries easily.
+
 
 ## Implementation
 
@@ -63,9 +63,7 @@ List the key features of your project:
 ```
 
 #### Run
-```bash
-[Run commands - e.g., npm start, python app.py]
-```
+python app.py to run 
 
 ### For Hardware:
 
@@ -82,15 +80,14 @@ List the key features of your project:
 ### For Software:
 
 #### Screenshots (Add at least 3)
+<img width="1911" height="925" alt="image" src="https://github.com/user-attachments/assets/e995e0d1-bfa9-4e41-8c00-3d11e4196a0f" />page to edit and delete entries
+<img width="1911" height="925" alt="image" src="https://github.com/user-attachments/assets/709de452-528b-4b18-bb74-f2e4f43562d0" />journal template
+<img width="1911" height="925" alt="image" src="https://github.com/user-attachments/assets/c56a83d6-d60b-45b2-ae02-73ff19007745" /> login page
+<img width="1911" height="925" alt="image" src="https://github.com/user-attachments/assets/411a4595-c30a-4011-ad48-af439d2b4380" />landing page
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+
 
 #### Diagrams
 
@@ -178,9 +175,8 @@ List the key features of your project:
 ### For Mobile Apps:
 
 #### App Flow Diagram
+<img width="1911" height="925" alt="image" src="https://github.com/user-attachments/assets/4b75c953-28e4-4756-ba33-c61c9c442746" />
 
-![App Flow](docs/app-flow.png)
-*Explain the user flow through your application*
 
 #### Installation Guide
 
