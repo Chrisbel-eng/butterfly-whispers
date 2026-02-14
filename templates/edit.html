@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Entry</title>
+</head>
+<body>
+
+    <h2>Edit Entry</h2>
+
+    <form method="POST">
+
+        <label>Title:</label><br>
+        <input type="text" name="title" value="{{ entry[2] }}" required><br><br>
+
+        <label>Content:</label><br>
+        <textarea name="content" rows="8" cols="40" required>{{ entry[3] }}</textarea><br><br>
+
+        <button type="submit">Update Entry</button>
+
+    </form>
+
+</body>
+</html>

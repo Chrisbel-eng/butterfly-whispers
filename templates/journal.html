@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Journal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .image-preview {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="journal-page">
+
+<form method="POST" action="/journal" enctype="multipart/form-data">
+
+<div class="journal-container">
+
+    <!-- LEFT SIDE -->
+    <div class="journal-left">
+
+        <div class="date-line">
+            {{ entry_date if entry_date else date }}
+        </div>
+
+        <button type="button" id="toggleLines" class="toggle-lines-btn">Hide Lines</button>
+
+        <!-- Title -->
+        <input type="text" name="title"
+               placeholder="Title"
+               value="{{ entry_title if entry_title else '' }}"
+               class="journal-title">
+
+        <textarea name="content1"
+                  class="journal-box"
+                  placeholder="What are you feeling today?">{{ content1 if content1 else '' }}</textarea>
+
+        <textarea name="content2"
+                  class="journal-box"
+                  placeholder="Need for improvements">{{ content2 if content2 else '' }}</textarea>
+
+        <textarea name="content3"
+                  class="journal-box">{{ content3 if content3 else '' }}</textarea>
+
+        <button type="submit" class="save-btn">{{ button_text if button_text else 'Save' }}</button>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="journal-right">
+
+        <div class="polaroid-group">
+
+            <label for="imageUpload1" class="polaroid-frame" id="frame1">
+                <div class="polaroid-inner" id="inner1">
+                    <span id="plus1">+</span>
+                    <img id="preview1" class="image-preview" style="display:none;">
+                </div>
+            </label>
+            <input type="file" name="image" id="imageUpload1" accept="image/*">
+
+            <label for="imageUpload2" class="polaroid-frame" id="frame2">
+                <div class="polaroid-inner" id="inner2">
+                    <span id="plus2">+</span>
+                    <img id="preview2" class="image-preview" style="display:none;">
+                </div>
+            </label>
+            <input type="file" name="image2" id="imageUpload2" accept="image/*">
+
+        </div>
+
+        <textarea name="gratitude"
+                  class="gratitude-box"
+                  placeholder="Things I'm grateful for">{{ gratitude if gratitude else '' }}</textarea>
+
+    </div>
+
+</div>
+
+{% if entry_id %}
+<input type="hidden" name="entry_id" value="{{ entry_id }}">
+{% endif %}
+
+</form>
+
+<script>
+    // Pass image_path to JS
+    var imagePath = {{ image_path|tojson if image_path else 'null' }};
+</script>
+
+<script>
+    // Handle image upload for first image
+    document.getElementById('imageUpload1').addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const preview1 = document.getElementById('preview1');
+                const plus1 = document.getElementById('plus1');
+                preview1.src = event.target.result;
+                preview1.style.display = 'block';
+                plus1.style.display = 'none';
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Handle image upload for second image
+    document.getElementById('imageUpload2').addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const preview2 = document.getElementById('preview2');
+                const plus2 = document.getElementById('plus2');
+                preview2.src = event.target.result;
+                preview2.style.display = 'block';
+                plus2.style.display = 'none';
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Toggle lines on/off
+    const toggleBtn = document.getElementById('toggleLines');
+    const journalBoxes = document.querySelectorAll('.journal-box');
+    const gratitudeBox = document.querySelector('.gratitude-box');
+    let linesVisible = true;
+
+    toggleBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        linesVisible = !linesVisible;
+        
+        journalBoxes.forEach(box => {
+            box.classList.toggle('no-lines');
+        });
+        gratitudeBox.classList.toggle('no-lines');
+        
+        toggleBtn.textContent = linesVisible ? 'Hide Lines' : 'Show Lines';
+    });
+
+    // Show existing image if editing
+    if (imagePath) {
+        document.addEventListener('DOMContentLoaded', function() {
+            const preview1 = document.getElementById('preview1');
+            const plus1 = document.getElementById('plus1');
+            preview1.src = '/' + imagePath;
+            preview1.style.display = 'block';
+            plus1.style.display = 'none';
+        });
+    }
+</script>
+
+</body>
+</html>

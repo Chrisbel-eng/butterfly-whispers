@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invalid Credentials</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="login-page">
+
+    <div class="login-box">
+
+        <h2 class="login-title">Invalid Credentials</h2>
+
+        <p style="color: #d32f2f; font-size: 16px; margin-bottom: 20px;">Username or password is incorrect. Please try again.</p>
+
+        <a href="/login" class="login-btn" style="display: inline-block; text-decoration: none;">Back to Login</a>
+
+    </div>
+
+</body>
+</html>

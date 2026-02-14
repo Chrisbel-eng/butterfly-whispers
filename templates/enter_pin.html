@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter PIN</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="pin-page">
+
+    <div class="pin-box">
+
+        <h2>Enter your PIN</h2>
+
+        <form method="POST" id="pinForm">
+
+            <div class="pin-inputs">
+                <input type="text" maxlength="1" class="pin-field">
+                <input type="text" maxlength="1" class="pin-field">
+                <input type="text" maxlength="1" class="pin-field">
+                <input type="text" maxlength="1" class="pin-field">
+            </div>
+
+            <!-- Hidden real input -->
+            <input type="hidden" name="pin" id="fullPin">
+
+            <button type="submit" class="unlock-btn">Unlock</button>
+
+        </form>
+
+    </div>
+
+<script>
+const inputs = document.querySelectorAll(".pin-field");
+const fullPin = document.getElementById("fullPin");
+
+inputs.forEach((input, index) => {
+
+    input.addEventListener("input", () => {
+        if (input.value.length === 1 && index < inputs.length - 1) {
+            inputs[index + 1].focus();
+        }
+        updateHiddenInput();
+    });
+
+    input.addEventListener("keydown", (e) => {
+        if (e.key === "Backspace" && input.value === "" && index > 0) {
+            inputs[index - 1].focus();
+        }
+    });
+});
+
+function updateHiddenInput() {
+    let pin = "";
+    inputs.forEach(input => {
+        pin += input.value;
+    });
+    fullPin.value = pin;
+}
+</script>
+
+</body>
+</html>

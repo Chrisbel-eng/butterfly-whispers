@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="welcome-page">
+
+    <div class="welcome-box">
+
+        <p class="belongs-text">This book belongs to</p>
+
+        <h1 class="username">{{ username }}</h1>
+
+        <a href="/journal" class="start-btn">Start Creating</a>
+
+        <br><br>
+
+        <a href="/logout" class="logout-btn">Logout</a>
+
+    </div>
+
+</body>
+</html>

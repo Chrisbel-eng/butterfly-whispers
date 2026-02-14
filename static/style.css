@@ -1,0 +1,672 @@
+/* Landing Page Background */
+.landing-page {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background: url('backgroundlanding.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Symphonic';
+    src: url('fonts/SymphonicCalligraphyDemoRegular.otf') format('opentype');
+}
+.title {
+    font-family: 'Symphonic', cursive;
+    font-size: 80px;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+}
+
+
+/* Tagline */
+.tagline {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #a8e6cf;
+    color: #2e2e2e;
+    padding: 12px 35px;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* Flicker Hover Effect */
+.login-btn:hover {
+    background-color: #81d8b0;
+    box-shadow: 0 0 8px #81d8b0,
+                0 0 16px #81d8b0,
+                0 0 24px #81d8b0;
+}
+
+/* LOGIN PAGE BACKGROUND */
+.login-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    background: url("login-bg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Playfair Display', serif;
+}
+
+/* BLURRED WHITE BOX */
+.login-box {
+    width: 350px;
+    padding: 40px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+
+    text-align: center;
+}
+
+/* TITLE */
+.login-title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #2e2e2e;
+}
+
+/* INPUT FIELDS */
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #a8e6cf;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* FLICKER GLOW EFFECT */
+.login-btn:hover {
+    background-color: #81d8b0;
+    box-shadow: 0 0 10px #81d8b0,
+                0 0 20px #81d8b0,
+                0 0 30px #81d8b0;
+}
+
+/* REGISTER TEXT */
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-text a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #2e2e2e;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+/* PIN PAGE BACKGROUND */
+.pin-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    background: url("pin-bg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Playfair Display', serif;
+}
+
+/* BLUR BOX */
+.pin-box {
+    width: 350px;
+    padding: 40px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+
+    text-align: center;
+}
+
+/* PIN INPUT CONTAINER */
+.pin-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+/* INDIVIDUAL PIN BOX */
+.pin-field {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Unlock Button */
+.unlock-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #a8e6cf;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Glow Hover */
+.unlock-btn:hover {
+    background-color: #81d8b0;
+    box-shadow: 0 0 10px #81d8b0,
+                0 0 20px #81d8b0,
+                0 0 30px #81d8b0;
+}
+/* WELCOME PAGE BACKGROUND */
+.welcome-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    background: url("welcomebg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Playfair Display', serif;
+}
+
+/* PASTEL PINK BOX */
+.welcome-box {
+    background: rgba(255, 214, 224, 0.85); /* soft pastel pink */
+    padding: 60px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* First Line */
+.belongs-text {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Username in Calligraphy */
+.username {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #7a3e48;
+}
+
+/* Invalid Credentials Text */
+.invalid-text {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #7a3e48;
+}
+
+/* Start Creating Button */
+.start-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #a8e6cf;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #2e2e2e;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #81d8b0;
+    box-shadow: 0 0 10px #81d8b0,
+                0 0 20px #81d8b0;
+}
+
+/* Logout Small Button */
+.logout-btn {
+    font-size: 13px;
+    color: #555;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    text-decoration: underline;
+}
+/* JOURNAL BACKGROUND */
+.journal-page {
+    margin: 0;
+    padding: 40px;
+
+    background: url("new1-bg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+
+    min-height: 100vh;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Layout */
+.journal-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* LEFT SIDE */
+.journal-left {
+    width: 60%;
+}
+
+/* Date */
+.date-line {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2e5266;
+    border-bottom: 2px solid #a8e6cf;
+    width: 160px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: fadeInDown 0.6s ease-out;
+}
+
+/* Centered Title */
+.journal-title {
+    display: block;
+    margin: 0 auto 40px auto;
+    width: 60%;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    font-size: 32px;
+    font-weight: 600;
+    color: #2e2e2e;
+    outline: none;
+    transition: all 0.3s ease;
+    padding-bottom: 10px;
+}
+
+.journal-title:focus {
+    border-bottom-color: #a8e6cf;
+    box-shadow: 0 5px 15px rgba(168, 230, 207, 0.2);
+}
+
+.journal-title::placeholder {
+    color: rgba(46, 46, 46, 0.4);
+}
+
+/* Light Blue Journal Boxes */
+.journal-box {
+    width: 85%;
+    height: 120px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: rgba(228, 148, 186, 0.2);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    color: #2e2e2e;
+    resize: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(168, 230, 207, 0.15);
+
+    background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.9),
+        rgba(255,255,255,0.9) 2px,
+        transparent 2px,
+        transparent 30px
+    );
+}
+
+.journal-box.no-lines {
+    background-image: none;
+}
+
+.journal-box:focus {
+    border-color: #a8e6cf;
+    box-shadow: 0 6px 20px rgba(168, 230, 207, 0.3);
+    background-color: rgba(228, 148, 186, 0.15);
+}
+
+.journal-box::placeholder {
+    color: rgba(46, 46, 46, 0.5);
+}
+
+/* RIGHT SIDE */
+.journal-right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Polaroid */
+.polaroid-frame {
+    width: 220px;
+    height: 260px;
+    background: white;
+    padding: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+.polaroid-frame:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.05);
+    transform: perspective(1000px) rotateY(-5deg) translateY(-5px);
+}
+
+.polaroid-group {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+    margin-left: -150px;
+    animation: slideInUp 0.7s ease-out;
+}
+
+.polaroid-inner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.polaroid-frame:hover .polaroid-inner {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+
+.polaroid-inner span {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.polaroid-frame:hover .polaroid-inner span {
+    color: white;
+    font-weight: bold;
+}
+
+/* Hide file inputs */
+#imageUpload1,
+#imageUpload2 {
+    display: none !important;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gratitude Box */
+
+
+.gratitude-box {
+    width: 380px;
+    height: 220px;
+    padding: 15px 15px 15px 30px;
+    background: rgba(228, 148, 186, 0.2);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    color: #2e2e2e;
+    resize: none;
+    margin-left: -80px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(168, 230, 207, 0.15);
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Playfair Display', serif;
+
+    background-image:
+        repeating-linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.9),
+            rgba(255,255,255,0.9) 2px,
+            transparent 2px,
+            transparent 30px
+        );
+}
+
+.gratitude-box.no-lines {
+    background-image: none;
+}
+
+.gratitude-box:focus {
+    border-color: #a8e6cf;
+    box-shadow: 0 6px 20px rgba(168, 230, 207, 0.3);
+    background-color: rgba(228, 148, 186, 0.15);
+}
+
+.gratitude-box::placeholder {
+    color: rgba(46, 46, 46, 0.5);
+}
+
+/* Save Button */
+.toggle-lines-btn {
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    border: 2px solid #a8e6cf;
+    border-radius: 5px;
+    background: transparent;
+    color: #2e5266;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.toggle-lines-btn:hover {
+    background: rgba(168, 230, 207, 0.2);
+    border-color: #7fd9b8;
+    color: #2e2e2e;
+}
+
+.toggle-lines-btn:active {
+    background: rgba(168, 230, 207, 0.3);
+}
+
+/* Save Button */
+.save-btn {
+    padding: 12px 40px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #a8e6cf 0%, #7fd9b8 100%);
+    color: #2e2e2e;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(168, 230, 207, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.save-btn:hover {
+    box-shadow: 0 8px 25px rgba(168, 230, 207, 0.5);
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #7fd9b8 0%, #a8e6cf 100%);
+}
+
+.save-btn:active {
+    transform: translateY(0px);
+    box-shadow: 0 4px 12px rgba(168, 230, 207, 0.3);
+}
+/* ===============================
+   ENTRIES PAGE REDESIGN
+================================= */
+
+.entries-page {
+    margin: 0;
+    padding: 0;
+
+    /* --- BACKGROUND --- */
+    background: url("welcomebg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Large Main Container */
+.entries-container {
+    width: 70%;
+    padding: 50px;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Big Center Heading */
+.entries-heading {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #1e2a38;
+    letter-spacing: 1px;
+}
+
+/* Individual Entry Box */
+.entry-box {
+    background: rgba(173,216,230,0.25);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    transition: 0.3s ease;
+}
+
+.entry-box:hover {
+    transform: translateY(-5px);
+    background: rgba(173,216,230,0.35);
+}
+
+/* Entry Title */
+.entry-box h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #1e2a38;
+}
+
+/* Date */
+.entry-date {
+    font-size: 14px;
+    color: #4b6a88;
+    margin: 8px 0 15px 0;
+}
+
+/* Actions */
+.entry-actions a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b6a88;
+    transition: 0.2s ease;
+}
+
+.entry-actions a:hover {
+    color: #a8e6cf;
+}
+
+/* Create New Entry Button */
+.create-entry-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #a8e6cf;
+    color: #1e2a38;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.create-entry-btn:hover {
+    box-shadow: 0 0 10px #a8e6cf,
+                0 0 20px #a8e6cf;
+}

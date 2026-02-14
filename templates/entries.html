@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Entries</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="entries-page">
+
+<div class="entries-container">
+
+    <h1 class="entries-heading">Previous Entries</h1>
+
+    {% for entry in entries %}
+    <div class="entry-box">
+        <h3>{{ entry[2] }}</h3>
+        <p class="entry-date">{{ entry[4] }}</p>
+
+        <div class="entry-actions">
+            <a href="/edit/{{ entry[0] }}">Edit</a>
+            <a href="/delete/{{ entry[0] }}">Delete</a>
+        </div>
+    </div>
+    {% endfor %}
+
+    <a href="/journal" class="create-entry-btn">Create New Entry</a>
+
+</div>
+
+</body>
+</html>
